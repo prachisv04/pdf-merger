@@ -1,0 +1,129 @@
+.navbar{
+    box-shadow: 2px 2px 2px black;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgba(50,50,50,.3);
+    box-sizing: border-box;
+}
+
+#logo{
+    height: 60px;
+}
+
+.nav-link{
+    color: black;
+    margin-left: 15px;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+#header_nav{
+    width: 70vw;
+}
+
+
+.desktop{
+    color: black;
+    font-size: xx-large;
+}
+
+
+
+#profile{
+    display: flex;
+    flex-direction: row-reverse;
+  
+}
+
+#list{
+    display: none;
+}
+@media screen and (max-width: 1000px) {
+    #list {
+      display: block;
+    }
+    .lgnsp{
+        display: none;
+    }
+  }
+.btn{
+    margin: 5px;
+    height:90%;
+    position: relative;
+    border-radius: 0px;
+}
+.top-nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.navbar-collapse{
+    margin-left: 10px;
+}
+
+.main{
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    background-color: rgb(248, 241, 249);
+    height: 88vh;
+}
+
+.footer{
+    font-size: small;
+    padding-left: 25px;
+}
+
+.inp-file{
+    padding-top: 30px;
+}
+
+.browse{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.browse + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    height: 80px;
+    width: 300px;
+    color: white;
+    background: linear-gradient(to bottom right, red, rgb(185, 76, 57));
+    display: inline-block;
+    padding: 25px;
+    border-radius: 20px;
+}
+.browse:focus + label,
+.browse + label:hover {
+    background: linear-gradient(to bottom right, red, rgb(139, 77, 66));
+    color: white;
+}
+
+.browse::after{
+    padding: 40px;
+}
+#fileList{  
+    list-style-type: '\2713';
+    width: 300px;
+    margin: auto;
+    background-color: rgb(249, 245, 245);
+    box-shadow:5px 5px 5px rgb(162, 151, 151) inset ,5px 5px 5px rgb(162, 151, 151);
+    display: none;
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(7, 24, 57);
+    font-weight: 500;
+}
+
+.source{
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 3px solid white;
+}
